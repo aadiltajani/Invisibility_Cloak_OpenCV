@@ -34,7 +34,7 @@ bg = np.flip(bg, axis=1)
 # start loop for capturing the video and performing masking operations on each frame
 while True:
 
-    # Cap Frame and convert it from RGB to HSV
+    # Capture Frame, flip it and convert it from RGB to HSV
 
     _, frame = cap.read()
     frame = np.flip(frame, axis=1)
